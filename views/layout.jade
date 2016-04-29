@@ -3,5 +3,23 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet',href='/stylesheets/bootstrap.css')
+    script(src="/javascripts/bootstrap.js")
+    script(src="/javascripts/jquery.min.js")
+    script(src="/javascripts/umd/dropdown.js")
+    script(src="/javascripts/umd/button.js")
+    script(src="/javascripts/umd/carousel.js")
+    script(src="/javascripts/umd/modal.js")
+    script(src="/javascripts/umd/popover.js")
+    script(src="/javascripts/umd/collapse.js")
+    script(src="/javascripts/umd/scrollspy.js")
+    script(src="/javascripts/umd/tab.js")
+    script(src="/javascripts/umd/tooltip.js")
+    script(src="/javascripts/umd/util.js")
+
+
+    include ./partials/navbar.html
   body
-    block content
+    .container-fluid
+      .row
+        block content
