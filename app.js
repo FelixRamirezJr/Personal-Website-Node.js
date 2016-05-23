@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var me = require('./routes/me');
 var about = require('./routes/about');
+var vu = require('./routes/vu');
 
 // Adding React To The appvar React = require('react');
 var React = require('react');
@@ -32,6 +33,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/me',me);
 app.use('/about',about);
+app.use('/vu',vu);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
